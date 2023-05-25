@@ -1,32 +1,68 @@
 class Jugador
 {
-    const int SALUD_MAXIMA = 100;
+    // const int SALUD_MAXIMA = 100;
 
-    int saludActual;
+    // int saludActual;
 
-    public int Salud
+    int turno;
+    int posicion;
+    string estado;
+
+    public Jugador(int turno, int posicion, string estado) //constructor de jugador
     {
-        get { return saludActual; }
+        this.turno = turno;
+        this.posicion = posicion;
+        this.estado = estado;
+    }
+
+    public int Posicion //get y set de posicion
+    {
+        get { return posicion; }
         set
         {
-            // if (value < 0 || value > SALUD_MAXIMA)
-            //     throw new Exception($"Me pasaron la salud invalida {value}");
-            if (value < 0)
-                saludActual = 0;
-            else if (value > SALUD_MAXIMA)
-                saludActual = SALUD_MAXIMA;
+            if (posicion < 0)
+            {
+                throw new Exception($"Me pasaron una posición inválida {posicion}");
+            }
             else
-                saludActual = value;
+            {
+                posicion = value; //actualiza la posicion en base al valor que se le pasa
+            }
         }
     }
 
-    public Jugador()
+    public int avanzarTurno() //método para avanzar
     {
-        this.saludActual = Jugador.SALUD_MAXIMA;
+        Console.WriteLine($"El valor de turno es: {turno}");
+        turno++;
+        Console.WriteLine($"El valor actualizado de turno es: {turno}");
+        return turno;
     }
 
-    public Jugador(int saludActual)
-    {
-        this.saludActual = saludActual;
-    }
+
+    // public int Salud
+    // {
+    //     get { return saludActual; }
+    //     set
+    //     {
+    //         // if (value < 0 || value > SALUD_MAXIMA)
+    //         //     throw new Exception($"Me pasaron la salud invalida {value}");
+    //         if (value < 0)
+    //             saludActual = 0;
+    //         else if (value > SALUD_MAXIMA)
+    //             saludActual = SALUD_MAXIMA;
+    //         else
+    //             saludActual = value;
+    //     }
+    // }
+
+    // public Jugador()
+    // {
+    //     this.saludActual = Jugador.SALUD_MAXIMA;
+    // }
+
+    // public Jugador(int saludActual)
+    // {
+    //     this.saludActual = saludActual;
+    // }
 }

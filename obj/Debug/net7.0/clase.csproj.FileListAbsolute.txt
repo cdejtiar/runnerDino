@@ -1,0 +1,15 @@
+/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/obj/Debug/net7.0/clase.csproj.AssemblyReference.cache
+/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/obj/Debug/net7.0/clase.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/obj/Debug/net7.0/clase.AssemblyInfoInputs.cache
+/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/obj/Debug/net7.0/clase.AssemblyInfo.cs
+/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/obj/Debug/net7.0/clase.csproj.CoreCompileInputs.cache
+/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/bin/Debug/net7.0/clase
+/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/bin/Debug/net7.0/clase.deps.json
+/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/bin/Debug/net7.0/clase.runtimeconfig.json
+/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/bin/Debug/net7.0/clase.dll
+/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/bin/Debug/net7.0/clase.pdb
+/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/obj/Debug/net7.0/clase.dll
+/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/obj/Debug/net7.0/refint/clase.dll
+/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/obj/Debug/net7.0/clase.pdb
+/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/obj/Debug/net7.0/clase.genruntimeconfig.cache
+/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/obj/Debug/net7.0/ref/clase.dll

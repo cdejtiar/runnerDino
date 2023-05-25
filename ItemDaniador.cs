@@ -1,4 +1,4 @@
-class ItemDaniador : Item
+/*class ItemDaniador : Item
 {
     int danio;
 
@@ -13,3 +13,4 @@ class ItemDaniador : Item
         jugador.Salud -= this.danio;
     }
 }
+*/
