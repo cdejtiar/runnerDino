@@ -35,12 +35,21 @@ class Jugador
         }
     }
 
-    public int avanzarTurno() //método para avanzar
+    public void avanzarTurno() //método para avanzar
     {
         Console.WriteLine($"El valor de turno es: {turno}");
         turno++;
         Console.WriteLine($"El valor actualizado de turno es: {turno}");
-        return turno;
+
+        estado = EstadoJugador.Normal;
+    }
+
+    public void Saltar(){
+        estado = EstadoJugador.Saltando;
+    }
+
+    public void Agachar(){
+        estado = EstadoJugador.Agachado;
     }
 
 
