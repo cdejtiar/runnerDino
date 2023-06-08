@@ -1,14 +1,18 @@
+enum EstadoJugador
+{
+    Normal, Saltando, Agachado
+}
+
 class Jugador
 {
     // const int SALUD_MAXIMA = 100;
 
     // int saludActual;
-
     int turno;
     int posicion;
-    string estado;
+    public EstadoJugador estado;
 
-    public Jugador(int turno, int posicion, string estado) //constructor de jugador
+    public Jugador(int turno, int posicion, EstadoJugador estado) //constructor de jugador
     {
         this.turno = turno;
         this.posicion = posicion;

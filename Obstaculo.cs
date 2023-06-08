@@ -1,20 +1,20 @@
-class Obstaculo
+abstract class Obstaculo : IObstaculo
 {
-    int posicion;
-    string altura;
+    // int posicion;
 
-    public Obstaculo(int posicion, string altura)
-    { //constructor
-        this.posicion = posicion;
-        this.altura = altura; //esperar a ver que dice Diego
+    // public Obstaculo(int posicion)
+    // { //constructor
+    //     this.posicion = posicion;
+    // }
+
+    // public int PosicionObstaculo
+    // {
+    //     get { return posicion; }
+    // }
+    public abstract string AlturaObstaculo
+    {
+        get; 
     }
 
-    public int PosicionObstaculo
-    {
-        get { return posicion; }
-    }
-    public string Altura
-    {
-        get { return altura; }
-    }
+    public abstract bool LoMato(Jugador jugador);
 }
