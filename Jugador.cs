@@ -9,35 +9,35 @@ class Jugador
 
     // int saludActual;
     int turno;
-    int posicion;
+    // int posicion;
     public EstadoJugador estado;
     static Random rand = new Random();
     static List<EstadoJugador> estados = new List<EstadoJugador>(){
         EstadoJugador.Normal, EstadoJugador.Saltando, EstadoJugador.Agachado
     };
 
-    public Jugador(int turno, int posicion, EstadoJugador estado) //constructor de jugador
+    public Jugador(int turno, /*int posicion,*/ EstadoJugador estado) //constructor de jugador
     {
         this.turno = turno;
-        this.posicion = posicion;
+        // this.posicion = posicion;
         this.estado = estado;
     }
 
-    public int Posicion //get y set de posicion
-    {
-        get { return posicion; }
-        set
-        {
-            if (posicion < 0)
-            {
-                throw new Exception($"Me pasaron una posición inválida {posicion}");
-            }
-            else
-            {
-                posicion = value; //actualiza la posicion en base al valor que se le pasa
-            }
-        }
-    }
+    // public int Posicion //get y set de posicion
+    // {
+    //     get { return posicion; }
+    //     set
+    //     {
+    //         if (posicion < 0)
+    //         {
+    //             throw new Exception($"Me pasaron una posición inválida {posicion}");
+    //         }
+    //         else
+    //         {
+    //             posicion = value; //actualiza la posicion en base al valor que se le pasa
+    //         }
+    //     }
+    // }
 
     public void avanzarTurno() //método para avanzar
     {

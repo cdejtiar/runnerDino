@@ -2,14 +2,22 @@
 {
     public static void Main()
     {
-        var jugador = new Jugador(0, 0, EstadoJugador.Normal); //definimos un nuevo jugador
+        var jugador = new Jugador(0, EstadoJugador.Normal); //definimos un nuevo jugador
         var pista = new Pista(); //definimos la pista
+        int cont = 0;
+        bool matado = false;
 
-        for (int i = 0; i < pista.posiciones.Count; i++)//simulamos el juego
-        {
+        // for (int i = 0; i < pista.posiciones.Count; i++)//simulamos el juego
+        // {
+            while(!matado){
             //punto 2 y 3
-            var posicionActual = pista.posiciones[i];
-            bool matado = posicionActual.LoMato(jugador);
+            var posicionActual = pista.posiciones[cont];
+
+            //punto 4
+            jugador.AccionRandom();
+            Console.WriteLine($"El jugador está {jugador.estado}");
+            
+            matado = posicionActual.LoMato(jugador);
             Console.WriteLine($"El obstaculo actual es {posicionActual.AlturaObstaculo}. Lo mato? {matado}");
 
             //punto 1
@@ -18,10 +26,14 @@
             jugador.avanzarTurno();
             // Console.WriteLine($"La posición actualizada es: {jugador.Posicion}");
 
-            //punto 4
-            jugador.AccionRandom();
-            Console.WriteLine($"El jugador está {jugador.estado}");
+            cont++;
             //jugador.Agachar();
+        }
+
+        if(matado){
+            Console.WriteLine("Sos un loser, chocaste");
+        } else {
+            Console.WriteLine("Sos un winnner, ganaste");
         }
 
         /*if (obstaculoAlto.Altura == "alto")
