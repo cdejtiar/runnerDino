@@ -1,6 +1,6 @@
 ﻿class Program
 {
-    static void Main()
+    public static void Main()
     {
         var jugador = new Jugador(0, 0, EstadoJugador.Normal); //definimos un nuevo jugador
         var pista = new Pista(); //definimos la pista
@@ -19,7 +19,9 @@
             // Console.WriteLine($"La posición actualizada es: {jugador.Posicion}");
 
             //punto 4
-            jugador.Agachar();
+            jugador.AccionRandom();
+            Console.WriteLine($"El jugador está {jugador.estado}");
+            //jugador.Agachar();
         }
 
         /*if (obstaculoAlto.Altura == "alto")

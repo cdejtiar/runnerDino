@@ -11,6 +11,10 @@ class Jugador
     int turno;
     int posicion;
     public EstadoJugador estado;
+    static Random rand = new Random();
+    static List<EstadoJugador> estados = new List<EstadoJugador>(){
+        EstadoJugador.Normal, EstadoJugador.Saltando, EstadoJugador.Agachado
+    };
 
     public Jugador(int turno, int posicion, EstadoJugador estado) //constructor de jugador
     {
@@ -50,6 +54,15 @@ class Jugador
 
     public void Agachar(){
         estado = EstadoJugador.Agachado;
+    }
+
+    public void AccionRandom(){
+        estado = NextInList<EstadoJugador>(estados);
+    }
+
+    public T NextInList<T>(List<T> lista)
+    {
+        return lista[rand.Next(lista.Count)];
     }
 
 
