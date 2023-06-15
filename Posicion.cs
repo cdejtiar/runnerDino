@@ -1,4 +1,4 @@
-class Posicion : IWeightable
+abstract class Posicion : IWeightable
 {
     public string AlturaObstaculo;
     public int weight;
