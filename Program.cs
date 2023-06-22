@@ -9,13 +9,16 @@
 
         // for (int i = 0; i < pista.posiciones.Count; i++)//simulamos el juego
         // {
-            pista.crearPista();
+            //pista.crearPista();
             while(!matado && cont < 4){
             //punto 2 y 3
             var posicionActual = pista.posiciones[cont];
 
             //punto 4
-            jugador.AccionRandom();
+            //jugador.AccionRandom();
+            ConsoleKeyInfo key = Console.ReadKey();
+                jugador.TocoTecla(key);
+
             Console.WriteLine($"El jugador está {jugador.estado}");
             
             matado = posicionActual.LoMato(jugador);

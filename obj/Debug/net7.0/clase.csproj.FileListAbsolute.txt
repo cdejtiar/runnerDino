@@ -21,3 +21,10 @@ D:\maximiliano\lct\2023\programacion-IV\runnerDino\obj\Debug\net7.0\clase.csproj
 D:\maximiliano\lct\2023\programacion-IV\runnerDino\obj\Debug\net7.0\clase.dll
 D:\maximiliano\lct\2023\programacion-IV\runnerDino\obj\Debug\net7.0\refint\clase.dll
 D:\maximiliano\lct\2023\programacion-IV\runnerDino\obj\Debug\net7.0\clase.pdb
+D:\maximiliano\lct\2023\programacion-IV\runnerDino\bin\Debug\net7.0\clase.exe
+D:\maximiliano\lct\2023\programacion-IV\runnerDino\bin\Debug\net7.0\clase.deps.json
+D:\maximiliano\lct\2023\programacion-IV\runnerDino\bin\Debug\net7.0\clase.runtimeconfig.json
+D:\maximiliano\lct\2023\programacion-IV\runnerDino\bin\Debug\net7.0\clase.dll
+D:\maximiliano\lct\2023\programacion-IV\runnerDino\bin\Debug\net7.0\clase.pdb
+D:\maximiliano\lct\2023\programacion-IV\runnerDino\obj\Debug\net7.0\clase.genruntimeconfig.cache
+D:\maximiliano\lct\2023\programacion-IV\runnerDino\obj\Debug\net7.0\ref\clase.dll

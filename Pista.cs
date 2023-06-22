@@ -1,9 +1,9 @@
 class Pista
 {
-    // public List<IObstaculo> posiciones = new List<IObstaculo>(){
-    // new PosicionLibre(), new PosicionLibre(), new ObstaculoAlto(), new ObstaculoBajo(), new PosicionLibre(), new ObstaculoAlto(), new ObstaculoBajo(), new PosicionLibre()
-    // };
-     public WeightedList<IObstaculo> posiciones = new WeightedList<IObstaculo>(
+     public List<IObstaculo> posiciones = new List<IObstaculo>(){
+     new PosicionLibre(), new PosicionLibre(), new ObstaculoAlto(), new ObstaculoBajo(), new PosicionLibre(), new ObstaculoAlto(), new ObstaculoBajo(), new PosicionLibre()
+     };
+     /*public WeightedList<IObstaculo> posiciones = new WeightedList<IObstaculo>(
         new List<IObstaculo>()
         {
             new PosiblePosicion() { AlturaObstaculo = new PosicionLibre(), Weight = 6 },
@@ -23,6 +23,6 @@ class Pista
         }
         Console.WriteLine($"{elegidos}");
     }
-
+*/
 
 }
