@@ -1,4 +1,6 @@
-﻿class Program
+﻿using System;
+
+class Program
 {
     public static void Main()
     {
@@ -7,8 +9,9 @@
         bool matado = false;
         //var gameOver = new FinDeJuego(jugador, matado); Intentamos hacerlo con evento el gameOver.
 
-            //pista.crearPista();
-            while(!matado && jugador.turno < 4){
+        //pista.crearPista();
+        while (!matado && jugador.turno < 4)
+        {
             //punto 2 y 3
             var posicionActual = pista.posiciones[jugador.turno];
 
@@ -25,9 +28,12 @@
 
         // checkWinLose(matado); sabemos que va adentro de FinDelJuego
 
-        if(matado){
+        if (matado)
+        {
             Console.WriteLine("Sos un loser, chocaste");
-        } else {
+        }
+        else
+        {
             Console.WriteLine("Sos un winnner, ganaste");
         }
     }

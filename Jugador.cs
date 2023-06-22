@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 enum EstadoJugador
 {
     Normal, Saltando, Agachado
@@ -27,22 +30,26 @@ class Jugador
         estado = EstadoJugador.Normal;
     }
 
-    public void processInput(){
+    public void processInput()
+    {
         ConsoleKeyInfo key = Console.ReadKey();
-                TocoTecla(key);
+        TocoTecla(key);
 
         Console.WriteLine($"El jugador está {estado}");
     }
 
-    public void Saltar(){
+    public void Saltar()
+    {
         estado = EstadoJugador.Saltando;
     }
 
-    public void Agachar(){
+    public void Agachar()
+    {
         estado = EstadoJugador.Agachado;
     }
 
-    public void AccionRandom(){
+    public void AccionRandom()
+    {
         estado = NextInList<EstadoJugador>(estados);
     }
 
@@ -52,13 +59,15 @@ class Jugador
     }
 
     public event Action<EstadoJugador>? EstadoCambiado;
-    public void TocoTecla(ConsoleKeyInfo key){
+    public void TocoTecla(ConsoleKeyInfo key)
+    {
         if (key.Key == ConsoleKey.UpArrow)
             Saltar();
         else if (key.Key == ConsoleKey.DownArrow)
             Agachar();
-        
-        if (EstadoCambiado != null){
+
+        if (EstadoCambiado != null)
+        {
             EstadoCambiado(estado);
         }
     }
