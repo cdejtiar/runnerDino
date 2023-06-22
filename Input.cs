@@ -1,11 +1,19 @@
-class Input{
-    Jugador jugador;
+/// <summary>
+/// Escuchar entradas de datos del humano
+/// </summary>
+class Input
+{
+    public enum AccionHumano { Arriba, Abajo, Nada }
 
-    public Input (Jugador jugador){
-        this.jugador = jugador;
-        jugador.EstadoCambiado += CambioEstado;
+    public AccionHumano processInput()
+    {
+        var key = Console.ReadKey();
+        if (key.Key == ConsoleKey.UpArrow)
+            return AccionHumano.Arriba;
+        else if (key.Key == ConsoleKey.DownArrow)
+            return AccionHumano.Abajo;
+        else
+            return AccionHumano.Nada;
     }
-    private void CambioEstado (EstadoJugador NuevoEstado) {
-        jugador.estado = NuevoEstado;
-    }
+
 }

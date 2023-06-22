@@ -1,40 +1,39 @@
 ﻿using System;
 
-class Program
+static class Program
 {
     public static void Main()
     {
         var jugador = new Jugador(0, EstadoJugador.Normal); //definimos un nuevo jugador
         var pista = new Pista(); //definimos la pista
-        bool matado = false;
-        //var gameOver = new FinDeJuego(jugador, matado); Intentamos hacerlo con evento el gameOver.
+        var input = new Input();
 
-        //pista.crearPista();
-        while (!matado && jugador.turno < 4)
+        foreach (var obstaculoActual in pista.Elegidos)
         {
-            //punto 2 y 3
-            var posicionActual = pista.posiciones[jugador.turno];
+            Console.WriteLine($"El obstaculo actual es {obstaculoActual}");
 
             //punto 4
-            //jugador.AccionRandom();
-            jugador.processInput();
+            var key = input.processInput();
+            Program.TocoTecla(key, jugador);
 
-            matado = posicionActual.LoMato(jugador);
-            Console.WriteLine($"El obstaculo actual es {posicionActual.AlturaObstaculo}. Lo mato? {matado}");
+            if (obstaculoActual.LoMato(jugador))
+            {
+                Console.WriteLine("Sos un loser, chocaste");
+                return;
+            }
 
             //punto 1
             jugador.avanzarTurno();
         }
 
-        // checkWinLose(matado); sabemos que va adentro de FinDelJuego
+        Console.WriteLine("Sos un winnner, ganaste");
+    }
 
-        if (matado)
-        {
-            Console.WriteLine("Sos un loser, chocaste");
-        }
-        else
-        {
-            Console.WriteLine("Sos un winnner, ganaste");
-        }
+    public static void TocoTecla(Input.AccionHumano accion, Jugador jugador)
+    {
+        if (accion == Input.AccionHumano.Arriba)
+            jugador.Saltar();
+        else if (accion == Input.AccionHumano.Abajo)
+            jugador.Agachar();
     }
 }

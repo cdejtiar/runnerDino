@@ -1,12 +1,12 @@
-abstract class PosiblePosicion : IWeightable
+class PosiblePosicion : IWeightable
 {
-    public string AlturaObstaculo;
+    public IObstaculo obstaculo;
     public int weight;
 
     public int Weight => weight;
 
-    public override string ToString()
-    {
-        return AlturaObstaculo;
-    }
+    // public override string ToString()
+    // {
+    //     return AlturaObstaculo;
+    // }
 }
