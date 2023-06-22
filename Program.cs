@@ -4,28 +4,23 @@
     {
         var jugador = new Jugador(0, EstadoJugador.Normal); //definimos un nuevo jugador
         var pista = new Pista(); //definimos la pista
-        int cont = 0;
         bool matado = false;
+        //var gameOver = new FinDeJuego(jugador, matado); Intentamos hacerlo con evento el gameOver.
 
             //pista.crearPista();
-            while(!matado && cont < 4){
+            while(!matado && jugador.turno < 4){
             //punto 2 y 3
-            var posicionActual = pista.posiciones[cont];
+            var posicionActual = pista.posiciones[jugador.turno];
 
             //punto 4
             //jugador.AccionRandom();
-            ConsoleKeyInfo key = Console.ReadKey();
-                jugador.TocoTecla(key);
+            jugador.processInput();
 
-            Console.WriteLine($"El jugador está {jugador.estado}");
-            
             matado = posicionActual.LoMato(jugador);
             Console.WriteLine($"El obstaculo actual es {posicionActual.AlturaObstaculo}. Lo mato? {matado}");
 
             //punto 1
             jugador.avanzarTurno();
-
-            cont++;
         }
 
         if(matado){

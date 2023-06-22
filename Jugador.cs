@@ -5,7 +5,7 @@ enum EstadoJugador
 
 class Jugador
 {
-    int turno;
+    public int turno;
     public EstadoJugador estado;
     static Random rand = new Random();
     static List<EstadoJugador> estados = new List<EstadoJugador>(){
@@ -25,6 +25,13 @@ class Jugador
         Console.WriteLine($"El valor actualizado de turno es: {turno}");
 
         estado = EstadoJugador.Normal;
+    }
+
+    public void processInput(){
+        ConsoleKeyInfo key = Console.ReadKey();
+                TocoTecla(key);
+
+        Console.WriteLine($"El jugador está {estado}");
     }
 
     public void Saltar(){
