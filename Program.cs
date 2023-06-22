@@ -23,6 +23,8 @@
             jugador.avanzarTurno();
         }
 
+        // checkWinLose(matado); sabemos que va adentro de FinDelJuego
+
         if(matado){
             Console.WriteLine("Sos un loser, chocaste");
         } else {
