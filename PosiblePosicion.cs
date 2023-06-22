@@ -1,6 +1,6 @@
-abstract class Posicion : IWeightable
+abstract class PosiblePosicion : IWeightable
 {
-    public string AlturaObstaculo;
+    public IObstaculo AlturaObstaculo;
     public int weight;
 
     public int Weight => weight;

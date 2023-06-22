@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/clase.csproj": {}
+    "D:\\maximiliano\\lct\\2023\\programacion-IV\\runnerDino\\clase.csproj": {}
   },
   "projects": {
-    "/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/clase.csproj": {
+    "D:\\maximiliano\\lct\\2023\\programacion-IV\\runnerDino\\clase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/clase.csproj",
+        "projectUniqueName": "D:\\maximiliano\\lct\\2023\\programacion-IV\\runnerDino\\clase.csproj",
         "projectName": "clase",
-        "projectPath": "/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/clase.csproj",
-        "packagesPath": "/Users/camidejtiar/.nuget/packages/",
-        "outputPath": "/Volumes/Cami 1/Lic. en Tecnología Multimedial/2023/Programacion Multimedial IV/runnerDino/obj/",
+        "projectPath": "D:\\maximiliano\\lct\\2023\\programacion-IV\\runnerDino\\clase.csproj",
+        "packagesPath": "C:\\Users\\colet\\.nuget\\packages\\",
+        "outputPath": "D:\\maximiliano\\lct\\2023\\programacion-IV\\runnerDino\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/camidejtiar/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\colet\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

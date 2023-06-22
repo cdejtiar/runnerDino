@@ -1,9 +1,8 @@
-class ObstaculoBajo : Obstaculo
+class ObstaculoBajo : IObstaculo
 {
+    public string AlturaObstaculo => "bajo";
 
-    public override string AlturaObstaculo => "bajo";
-
-    public override bool LoMato(Jugador jugador)
+    public bool LoMato(Jugador jugador)
     {
         return jugador.estado != EstadoJugador.Saltando;
     }
